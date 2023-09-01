@@ -8,14 +8,14 @@ align-content: center
 background.solid: #D3D3D3
 
 -- lib.bio: Bio
-profile: $assets.files.images.avatar2.jpg
-name: Muskan Khanna
+profile: $assets.files.avatar.jpg
+name: GUY
 details: Beauty And Fashion
-linkedin: $assets.files.images.linkedin.png
-twitter: $assets.files.images.twitter.png
-github: $assets.files.images.github.png
-instagram: $assets.files.images.instagram.png
-youtube: $assets.files.images.youtube.png
+linkedin: $assets.files.linkedin.png
+twitter: $assets.files.twitter.png
+github: $assets.files.github.png
+instagram: $assets.files.instagram.png
+youtube: $assets.files.youtube.png
 button1: Github
 button2: Twitter
 button3: Instagram
