@@ -1,40 +1,28 @@
--- ds.page: Welcome to doc-site
+-- import: CHALLENGE-3/lib
+-- import: CHALLENGE-3/assets
 
+-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+background.solid: #D3D3D3
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- lib.bio: Bio
+profile: $assets.files.images.avatar2.jpg
+name: Muskan Khanna
+details: Beauty And Fashion
+linkedin: $assets.files.images.linkedin.png
+twitter: $assets.files.images.twitter.png
+github: $assets.files.images.github.png
+instagram: $assets.files.images.instagram.png
+youtube: $assets.files.images.youtube.png
+button1: Github
+button2: Twitter
+button3: Instagram
+button4: LinkedIn
+$is-hover-1: false
+$is-hover-2: false
+$is-hover-3: false
+$is-hover-4: false
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
-
--- ds.h3: 🎯 Used by?
-
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: ftd.column
