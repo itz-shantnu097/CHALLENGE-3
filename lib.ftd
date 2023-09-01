@@ -146,6 +146,6 @@ $on-mouse-leave$: $ftd.set-bool($a = $bio.is-hover-4, v = false)
 -- end: bio
 
 -- ftd.type bioStyle:
-size.px: 20
-font-family: Arial
+size.px: 17
+font-family: Times New Roman
 font-align: center
