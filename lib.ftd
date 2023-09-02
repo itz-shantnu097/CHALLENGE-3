@@ -1,25 +1,22 @@
--- component bio:
-caption title:
-string name:
-ftd.image-src profile:
+-- import: CHALLENGE-3/assets
+
+-- component biopage:
+caption name:
 string details:
-ftd.image-src linkedin:
-ftd.image-src twitter:
-ftd.image-src github:
-ftd.image-src instagram:
-ftd.image-src youtube:
-string button1:
+string linkedin:
+string twitter:
+string youtube:
+string instagram:
+string github:
+ftd.image-src profile:
 boolean $is-hover-1: false
-string button2:
 boolean $is-hover-2: false
-string button3:
 boolean $is-hover-3: false
-string button4:
 boolean $is-hover-4: false
 optional ftd.responsive-type role:
 
 -- ftd.column:
-background.solid: #ffecd2
+background.solid: #B2BEB5
 align-content: center
 width: auto
 height: auto
@@ -31,17 +28,17 @@ margin.px: 20
 height.fixed.px: 35
 
 -- ftd.image:
-src: $bio.profile
+src: $biopage.profile
 width.fixed.percent: 50
 height.fixed.percent: 50
 border-radius.px: 100
 
--- ftd.text: $bio.name
+-- ftd.text: $biopage.name
 width.fixed.percent: 100
 text-align: center
 role: $inherited.types.heading-medium
 
--- ftd.text: $bio.details
+-- ftd.text: $biopage.details
 width.fixed.percent: 100
 text-align: center
 role: $inherited.types.copy-regular
@@ -49,103 +46,129 @@ padding-bottom.px: 20
 
 -- ftd.row:
 spacing.fixed.px: 20
-padding-bottom.px: 40
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: white
 
 -- ftd.image:
-src: $bio.linkedin
-link: https://linkedin.com
+src: $assets.files.linkedin.png
 width.fixed.px: 20
 height.fixed.px: 20
 
--- ftd.image:
-src: $bio.twitter
-link: https://twitter.com
-width.fixed.px: 20
-height.fixed.px: 20
-
--- ftd.image:
-src: $bio.github
-link: https://github.com
-width.fixed.px: 20
-height.fixed.px: 20
-
--- ftd.image:
-src: $bio.instagram
-link: https://instagram.com
-width.fixed.px: 20
-height.fixed.px: 20
-
--- ftd.image:
-src: $bio.youtube
-link: https://youtube.com
-width.fixed.px: 20
-height.fixed.px: 20
+-- ftd.text: LinkedIn
+role: $bioStyle
+text-align: center
+width.fixed.percent: 100
+color: #36454F
+background.solid if { biopage.is-hover-1 }: #fcb69f
+link: $biopage.linkedin
+$on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-1, v = false)
 
 -- end: ftd.row
 
--- ftd.text: $bio.button1
-role: $bioStyle
-text-align: center
-width.fixed.percent: 100
+-- ftd.row:
+spacing.fixed.px: 20
 margin.px: 20
 padding-vertical.px: 10
 border-radius.px: 20
-color: #b12a5b
 background.solid: white
-background.solid if { bio.is-hover-1 }: #fcb69f
-link: http://www.github.com
-$on-mouse-enter$: $ftd.set-bool($a = $bio.is-hover-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $bio.is-hover-1, v = false)
 
+-- ftd.image:
+src: $assets.files.twitter.png
+width.fixed.px: 20
+height.fixed.px: 20
 
--- ftd.text: $bio.button2
+-- ftd.text: Twitter
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
+color: #36454F
+background.solid if { biopage.is-hover-2 }: #fcb69f
+link: $biopage.twitter
+$on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-2, v = false)
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 20
 margin.px: 20
 padding-vertical.px: 10
 border-radius.px: 20
-color: #b12a5b
 background.solid: white
-background.solid if { bio.is-hover-2 }: #fcb69f
-link: http://www.twitter.com
-$on-mouse-enter$: $ftd.set-bool($a = $bio.is-hover-2, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $bio.is-hover-2, v = false)
 
--- ftd.text: $bio.button3
+-- ftd.image:
+src: $assets.files.github.png
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: Github
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
+color: #36454F
+background.solid if { biopage.is-hover-3 }: #fcb69f
+link: $biopage.github
+$on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-3, v = false)
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 20
 margin.px: 20
 padding-vertical.px: 10
 border-radius.px: 20
-color: #b12a5b
 background.solid: white
-background.solid if { bio.is-hover-3 }: #fcb69f
-link: http://www.instagram.com
-$on-mouse-enter$: $ftd.set-bool($a = $bio.is-hover-3, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $bio.is-hover-3, v = false)
 
--- ftd.text: $bio.button4
+-- ftd.image:
+src: $assets.files.instagram.png
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: Instagram
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
+color: #36454F
+background.solid if { biopage.is-hover-4 }: #fcb69f
+link: $biopage.instagram
+$on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-4, v = false)
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 20
 margin.px: 20
 padding-vertical.px: 10
 border-radius.px: 20
-color: #b12a5b
 background.solid: white
-background.solid if { bio.is-hover-4 }: #fcb69f
-link: http://www.linkedin.com
-$on-mouse-enter$: $ftd.set-bool($a = $bio.is-hover-4, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $bio.is-hover-4, v = false)
 
+-- ftd.image:
+src: $assets.files.youtube.png
+width.fixed.px: 20
+height.fixed.px: 20
+
+-- ftd.text: Youtube
+role: $bioStyle
+text-align: center
+width.fixed.percent: 100
+color: #36454F
+background.solid if { biopage.is-hover-4 }: #fcb69f
+link: $biopage.youtube
+$on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-4, v = false)
+
+-- end: ftd.row
 
 -- end: ftd.column
 
--- end: bio
+-- end: biopage
 
 -- ftd.type bioStyle:
-size.px: 17
+size.px: 20
 font-family: Times New Roman
 font-align: center

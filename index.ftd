@@ -7,22 +7,13 @@ height: hug-content
 align-content: center
 background.solid: #D3D3D3
 
--- lib.bio: Bio
+-- lib.biopage: KRISHNA
 profile: $assets.files.avatar.jpg
-name: GUY
-details: Beauty And Fashion
-linkedin: $assets.files.linkedin.png
-twitter: $assets.files.twitter.png
-github: $assets.files.github.png
-instagram: $assets.files.instagram.png
-youtube: $assets.files.youtube.png
-button1: Github
-button2: Twitter
-button3: Instagram
-button4: LinkedIn
-$is-hover-1: false
-$is-hover-2: false
-$is-hover-3: false
-$is-hover-4: false
+details: GUNS AND ACCESSORIES
+linkedin: www.linkedin.com
+twitter: www.twitter.com
+youtube: www.youtube.com
+instagram: www.instagram.com
+github: www.github.com
 
 -- end: ftd.column
