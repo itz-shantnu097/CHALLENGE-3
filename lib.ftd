@@ -16,7 +16,7 @@ boolean $is-hover-4: false
 optional ftd.responsive-type role:
 
 -- ftd.column:
-background.solid: #ffecd2
+background.solid: #B2BEB5
 align-content: center
 width: auto
 height: auto
@@ -46,6 +46,10 @@ padding-bottom.px: 20
 
 -- ftd.row:
 spacing.fixed.px: 20
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: white
 
 -- ftd.image:
 src: $assets.files.linkedin.png
@@ -56,11 +60,7 @@ height.fixed.px: 20
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
-margin.px: 20
-padding-vertical.px: 10
-border-radius.px: 20
-color: #b12a5b
-background.solid: white
+color: #36454F
 background.solid if { biopage.is-hover-1 }: #fcb69f
 link: $biopage.linkedin
 $on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-1, v = true)
@@ -70,6 +70,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-1, v = false)
 
 -- ftd.row:
 spacing.fixed.px: 20
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: white
 
 -- ftd.image:
 src: $assets.files.twitter.png
@@ -80,11 +84,7 @@ height.fixed.px: 20
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
-margin.px: 20
-padding-vertical.px: 10
-border-radius.px: 20
-color: #b12a5b
-background.solid: white
+color: #36454F
 background.solid if { biopage.is-hover-2 }: #fcb69f
 link: $biopage.twitter
 $on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-2, v = true)
@@ -94,6 +94,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-2, v = false)
 
 -- ftd.row:
 spacing.fixed.px: 20
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: white
 
 -- ftd.image:
 src: $assets.files.github.png
@@ -104,11 +108,7 @@ height.fixed.px: 20
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
-margin.px: 20
-padding-vertical.px: 10
-border-radius.px: 20
-color: #b12a5b
-background.solid: white
+color: #36454F
 background.solid if { biopage.is-hover-3 }: #fcb69f
 link: $biopage.github
 $on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-3, v = true)
@@ -118,6 +118,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-3, v = false)
 
 -- ftd.row:
 spacing.fixed.px: 20
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: white
 
 -- ftd.image:
 src: $assets.files.instagram.png
@@ -128,11 +132,7 @@ height.fixed.px: 20
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
-margin.px: 20
-padding-vertical.px: 10
-border-radius.px: 20
-color: #b12a5b
-background.solid: white
+color: #36454F
 background.solid if { biopage.is-hover-4 }: #fcb69f
 link: $biopage.instagram
 $on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-4, v = true)
@@ -142,6 +142,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $biopage.is-hover-4, v = false)
 
 -- ftd.row:
 spacing.fixed.px: 20
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: white
 
 -- ftd.image:
 src: $assets.files.youtube.png
@@ -152,11 +156,7 @@ height.fixed.px: 20
 role: $bioStyle
 text-align: center
 width.fixed.percent: 100
-margin.px: 20
-padding-vertical.px: 10
-border-radius.px: 20
-color: #b12a5b
-background.solid: white
+color: #36454F
 background.solid if { biopage.is-hover-4 }: #fcb69f
 link: $biopage.youtube
 $on-mouse-enter$: $ftd.set-bool($a = $biopage.is-hover-4, v = true)
