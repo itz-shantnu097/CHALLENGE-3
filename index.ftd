@@ -10,5 +10,10 @@ background.solid: #D3D3D3
 -- lib.biopage: KRISHNA
 profile: $assets.files.avatar.jpg
 details: GUNS AND ACCESSORIES
+linkedin: www.linkedin.com
+twitter: www.twitter.com
+youtube: www.youtube.com
+instagram: www.instagram.com
+github: www.github.com
 
 -- end: ftd.column
