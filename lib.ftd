@@ -51,6 +51,7 @@ padding-vertical.px: 10
 border-radius.px: 20
 background.solid: white
 width.fixed.percent: 100
+align-content: center
 
 -- ftd.image:
 src: $assets.files.linkedin.png
@@ -75,6 +76,7 @@ padding-vertical.px: 10
 border-radius.px: 20
 background.solid: white
 width.fixed.percent: 100
+align-content: center
 
 -- ftd.image:
 src: $assets.files.twitter.png
@@ -99,6 +101,7 @@ padding-vertical.px: 10
 border-radius.px: 20
 background.solid: white
 width.fixed.percent: 100
+align-content: center
 
 -- ftd.image:
 src: $assets.files.github.png
@@ -123,6 +126,7 @@ padding-vertical.px: 10
 border-radius.px: 20
 background.solid: white
 width.fixed.percent: 100
+align-content: center
 
 -- ftd.image:
 src: $assets.files.instagram.png
@@ -147,6 +151,7 @@ padding-vertical.px: 10
 border-radius.px: 20
 background.solid: white
 width.fixed.percent: 100
+align-content: center
 
 -- ftd.image:
 src: $assets.files.youtube.png
